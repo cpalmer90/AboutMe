@@ -1,18 +1,17 @@
 "use strict";
 
-// export {user};
-
 let user;
 let myFavAnimal;
+let animal;
 let answer;
-let myJoke
-let who
+let myJoke;
+let who;
+
 
 function myFunction() {
-    var element = document.body;
+    let element = document.body;
     element.classList.toggle("dark-mode");
  }
-
 
 alert("Hello, Welcome to my site");
 
@@ -27,8 +26,8 @@ userName();
 
 function favAnimal(){
 
-    animal = prompt(user + " what is your favourite Animal?").toLowerCase();
-    // console.log(animal);
+    animal = prompt(user + " what is your favourite Animal?").toLowerCase()
+    console.log(animal);
 
 if(animal === " dog"){
 myFavAnimal = " Cat"
@@ -45,8 +44,8 @@ favAnimal();
 
 function joke(){
 
-    answer = prompt(user + ", would you like to hear a joke?").toLowerCase();
-    // console.log(answer);
+    answer = prompt(user + ", would you like to hear a joke?").toLowerCase()
+    console.log(answer);
 
     if (answer === "yes"){
         myJoke = prompt("knock, knock")

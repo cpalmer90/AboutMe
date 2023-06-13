@@ -81,6 +81,29 @@ color: #025464;}
         border-width: 0.1cm;
         margin-top: 5px;
         background-color: #F2E7D5 ;
+        border: 12px ridge #E57C23;
     }
  
+    .myButton {
+
+      background-color: #F2E7D5;
+  color: #025464;
+  border: 2px solid #E57C23;
+  border-radius: 12px;
+  background-color: #f4511e;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.myButton:hover {opacity: 1}
+      
+    
    
