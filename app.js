@@ -26,7 +26,7 @@ userName();
 
 function favAnimal(){
 
-    animal = prompt(user + " what is your favourite Animal?").toLowerCase()
+    animal = prompt(user + " what is your favourite Animal?").toLowerCase();
     console.log(animal);
 
 if(animal === " dog"){
