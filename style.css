@@ -1,0 +1,86 @@
+
+@font-face {
+    font-family:IndieFlower;
+    src: url(IndieFlower-Regular.ttf);
+  }
+
+body {
+    max-width: 320px;
+    font-size: larger;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+    color: #025464;
+    background-color: #025464;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: IndieFlower;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select:none; 
+}
+
+
+
+.dropbtn {
+  background-color: #025464;
+  color: #E57C23;
+  padding: 16px;
+  font-size: 16px;
+  border: 1px;
+  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E57C23;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #025464;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #E8AA42;
+color: #025464;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #E8AA42;
+color: #025464;}
+
+
+  .dark-mode {
+    background-color: #16FF00;
+    color: #fff700;
+  }
+
+
+ .borders { 
+    
+        border-width:3px;
+        border-style:solid;
+        border-color:#E57C23;
+        border-width: 0.1cm;
+        margin-top: 5px;
+        background-color: #F2E7D5 ;
+    }
+ 
+   
