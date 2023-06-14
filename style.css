@@ -80,6 +80,7 @@ body {
   margin-top: 5px;
   background-color: #f2e7d5;
   border: 12px ridge #e57c23;
+  border-radius: 12px;
 }
 
 .myButton {

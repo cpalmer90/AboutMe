@@ -105,7 +105,9 @@ function quiz() {
       alert("Did you even read the Bio, im 33 years young!");
       console.log(answer0);
     } else if (answer0 === "no" || answer0 === "n") {
-      alert("Correct, i am very youthful");
+      alert(
+        "Correct, i am a very youthful 33 years young (with back pain and dodgey knees"
+      );
       console.log(answer0);
     } else {
       alert("Thats not an answer");
@@ -136,7 +138,7 @@ function quiz() {
     console.log(answer2);
 
     if (answer2 === "yes" || answer2 === "y") {
-      alert("Come on You Yellow!");
+      alert("Come on You Yellows!");
       console.log(answer2);
     } else if (answer2 === "no" || answer2 === "n") {
       alert("Booo");
@@ -178,4 +180,22 @@ function quiz() {
     }
   }
   q4();
+
+  let answ = prompt("What number am i thinking of!");
+  for (let i = 0; i < 6; i++) {
+    if (answ > 20) {
+      alert("lower, lower");
+    } else if (answ < 20) {
+      alert("to low try again!");
+    } else if (answ == NaN) {
+      alert("uh uh uh you forgot to say the magic number");
+    } else {
+      alert("not as dumb as you look!");
+    }
+  }
+  alert(
+    "Thats Great " +
+      user +
+      " the quiz has finished an you made it out with your life... this time!"
+  );
 }
