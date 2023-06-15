@@ -73,7 +73,6 @@ function abtu() {
   }
 
   joke();
-
   alert(
     " it feels like ive know you a lifetime already " +
       " your name is " +
@@ -96,11 +95,9 @@ function quiz() {
   );
   alert("Mwhahahaha!");
   alert("please answer all questions yes/y or no/n");
-
   function q0() {
     answer0 = prompt("Question 1: Am i 33 years old?");
     console.log(answer0);
-
     if (answer0 === "yes" || answer0 === "y") {
       alert("Did you even read the Bio, im 33 years young!");
       console.log(answer0);
@@ -114,13 +111,11 @@ function quiz() {
     }
   }
   q0();
-
   function q1() {
     answer1 = prompt(
       "Question 2: is one of my interests Landscape Photography?"
     );
     console.log(answer1);
-
     if (answer1 === "yes" || answer1 === "y") {
       alert("incorrect, im into wildlife photography");
       console.log(answer1);
@@ -132,11 +127,9 @@ function quiz() {
     }
   }
   q1();
-
   function q2() {
     answer2 = prompt("Question 3: Do i support Norwich city Fc?");
     console.log(answer2);
-
     if (answer2 === "yes" || answer2 === "y") {
       alert("Come on You Yellows!");
       console.log(answer2);
@@ -148,11 +141,9 @@ function quiz() {
     }
   }
   q2();
-
   function q3() {
     answer3 = prompt("Am i a great guy?");
     console.log(answer3);
-
     if (answer3 === "yes" || answer3 === "y") {
       alert("Ding Ding we have a winner, great job " + user);
       console.log(answer3);
@@ -164,11 +155,9 @@ function quiz() {
     }
   }
   q3();
-
   function q4() {
     answer4 = prompt("Do i want to be a coder?");
     console.log(answer4);
-
     if (answer4 === "yes" || answer4 === "y") {
       alert("Sleep, Eat, Code, Repeat");
       console.log(answer4);
@@ -180,31 +169,61 @@ function quiz() {
     }
   }
   q4();
+  function q5() {
+    const number = Math.floor(Math.random() * 10 + 1);
+    for (let i = 4; i > 0; i--) {
+      let guesses = i;
+      const remaining = 4 - guesses;
+      console.log(remaining);
+      let guess = prompt(
+        "guess a number betrween 1 and 10 you have " +
+          guesses +
+          " attempts left"
+      );
+      const guessNum = parseInt(guess);
+      if (guessNum === number) {
+        alert("Winner Winner, Chicken Dinner");
+        break;
+      }
+      if (i === 1) {
+        alert(" The correct number " + number);
+        console.log(number);
+        break;
+      }
+      if (guessNum < number) {
+        alert("Too Low");
+      } else if (guessNum > number) {
+        alert("Too High");
+      }
+    }
+  }
+  q5();
 
-  // not working
+  function q6() {
+    // make an array of four places that i would like to visit.
+    // user has to guess any one of the places stated in the array.
+    // initiate the global variable for the user guess
+    // set for loop with 6 iterations
+    // inside the for loop prompt the user for a guess and assign it to a let variable.
+    // if user guess is contained in the array then display weldone alert and break out of the loop.
+    // if user has had 6 guesses then display alert to say they havent got the answer and list the correct answers.
 
-  // function q5() {
-  //   const number = Math.floor(Math.random() * 10 + 1);
+    const placesToVisit = ["thailand", "the moon", "kenya", "the amazon"];
+    let userGuess;
+    for (let i = 0; i < 6; i++) {
+      userGuess = prompt(
+        "Guess one of four countries i would like to visit?"
+      ).toLowerCase();
 
-  //   for (let i = 3; i > 0; i--) {
-  //     let guesses = i + 1;
-  //     const guessNum = parseInt(guess);
-  //     let guess = prompt(
-  //       "guess a number betrween 1 and 10 you have " + guesses + "attempts"
-  //     );
-
-  //     if (guessNum === number) {
-  //       alert("Winner Winner, Chicken Dinner");
-  //       break;
-  //     } else if (guessNum < number) {
-  //       alert("Too LOW");
-  //     } else if (guessNum > number) {
-  //       alert("Too High");
-  //     }
-  //     if (i === 0) {
-  //       alert(" The correct number " + number);
-  //     }
-  //   }
-  // }
-  // q5();
+      if (placesToVisit.includes(userGuess)) {
+        alert("Weldone thats correct");
+        break;
+      }
+      if (i === 5) {
+        alert("Incorrect");
+        break;
+      }
+    }
+  }
+  q6();
 }
