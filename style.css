@@ -81,6 +81,7 @@ body {
   background-color: #f2e7d5;
   border: 12px ridge #e57c23;
   border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .myButton {
