@@ -181,21 +181,30 @@ function quiz() {
   }
   q4();
 
-  let answ = prompt("What number am i thinking of!");
-  for (let i = 0; i < 6; i++) {
-    if (answ > 20) {
-      alert("lower, lower");
-    } else if (answ < 20) {
-      alert("to low try again!");
-    } else if (answ == NaN) {
-      alert("uh uh uh you forgot to say the magic number");
-    } else {
-      alert("not as dumb as you look!");
-    }
-  }
-  alert(
-    "Thats Great " +
-      user +
-      " the quiz has finished an you made it out with your life... this time!"
-  );
+  // not working
+
+  // function q5() {
+  //   const number = Math.floor(Math.random() * 10 + 1);
+
+  //   for (let i = 3; i > 0; i--) {
+  //     let guesses = i + 1;
+  //     const guessNum = parseInt(guess);
+  //     let guess = prompt(
+  //       "guess a number betrween 1 and 10 you have " + guesses + "attempts"
+  //     );
+
+  //     if (guessNum === number) {
+  //       alert("Winner Winner, Chicken Dinner");
+  //       break;
+  //     } else if (guessNum < number) {
+  //       alert("Too LOW");
+  //     } else if (guessNum > number) {
+  //       alert("Too High");
+  //     }
+  //     if (i === 0) {
+  //       alert(" The correct number " + number);
+  //     }
+  //   }
+  // }
+  // q5();
 }
